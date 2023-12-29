@@ -1,0 +1,57 @@
+:root {
+    --darkbrown: #675141;
+    --darkgreen: #4A501F;
+    --lightgreen: #79804B;
+    --lightergreen: #B4B368;
+    --cream: #E1D7BC;
+    --lightgrey: #F5F5F5;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+justify-content: center;
+margin-left: 50px;
+}
+
+.header-logo{
+    height: 70px;
+    width: auto;
+}
+
+.navbar-nav{
+    margin-right: 50px;
+    gap: 30px;
+}
+
+.navbar-nav a.nav-link {
+    color: #675141;
+  }
+  
+
+  .navbar-nav a.nav-link.active {
+    color: #79804B;
+  }
+
+  .navbar-nav a.nav-link:hover {
+    color:#B4B368;
+  }
+
+  .navbar-toggler {
+    margin-right: 50px;
+  }
+
+
+
+
+
+
+  
