@@ -75,10 +75,10 @@ margin-left: 50px;
     background-color: white;
     padding: 20px; 
     width: 500px;
-    height: 60%;
+    height: 55%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /*justify-content: space-between; */
     align-items: center;
   }
 
@@ -88,6 +88,7 @@ margin-left: 50px;
     font-family: 'Averia Serif Libre', serif;
     color: #4A501F;
     font-size: 32px;
+    
   }
 
   .hero-desc{
@@ -115,7 +116,7 @@ margin-left: 50px;
 @media screen and (max-width: 768px) {
     .hero-box {
         width: 400px;
-        
+        height: 60%;
     }
 
     .hero-title {
@@ -132,7 +133,6 @@ margin-left: 50px;
   @media screen and (max-width: 480px) {
     .hero-box {
         width: 300px;
-        
     }
 
     .hero-title {
