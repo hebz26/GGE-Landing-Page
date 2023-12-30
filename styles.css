@@ -5,14 +5,18 @@
     --lightergreen: #B4B368;
     --cream: #E1D7BC;
     --lightgrey: #F5F5F5;
-
-
 }
 
 *{
     margin: 0;
     padding: 0;
     font-family: 'Lexend', sans-serif;
+}
+
+/*-------------------------------Navbar-------------------------------*/
+
+nav{
+    background-color: white;
 }
 
 .logo-container{
@@ -36,7 +40,6 @@ margin-left: 50px;
     color: #675141;
   }
   
-
   .navbar-nav a.nav-link.active {
     color: #79804B;
   }
@@ -49,9 +52,101 @@ margin-left: 50px;
     margin-right: 50px;
   }
 
+  /*-------------------------------Hero-------------------------------*/
 
-
-
-
-
+  .hero-container {
+    position: relative; 
+    max-width: 100%;
+  }
   
+  .hero-image {
+    width: 100%;
+    height: 700px;
+    object-fit: cover; 
+    object-position: bottom; 
+    display: block;
+  }
+  
+  .hero-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: white;
+    padding: 20px; 
+    width: 500px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-title{
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'Averia Serif Libre', serif;
+    color: #4A501F;
+    font-size: 32px;
+  }
+
+  .hero-desc{
+    width: 100%;
+    color: #79804B;
+    font-size: 18px;
+  }
+
+  .cbutton-container{
+    max-width: 200px;
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+
+  .contact-button {
+    padding: 10px;
+    box-shadow: 5px 5px 0px var(--darkgreen); /* Adjust the values as needed */
+    border: none;
+    background-color: #79804B;
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  /* Medium screens (768px) */
+@media screen and (max-width: 768px) {
+    .hero-box {
+        width: 400px;
+        
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-desc {
+        font-size: 18px;
+    }
+
+}
+
+  /* Medium screens (768px) */
+  @media screen and (max-width: 480px) {
+    .hero-box {
+        width: 300px;
+        
+    }
+
+    .hero-title {
+        font-size: 20px;
+    }
+
+    .hero-desc {
+        font-size: 15px;
+    }
+
+   
+}
+
+
+
+
+
