@@ -172,6 +172,7 @@ margin-left: 50px;
    font-family: 'Averia Serif Libre', serif;
     color: #4A501F;
   font-weight: lighter;
+  margin-bottom: -20px;
 }
   
 .service-container {
@@ -191,6 +192,7 @@ margin-left: 50px;
     no-repeat center / cover;
   border-radius: 0px;
 }
+
 .left {
   width: 50%;
   min-height: 400px;
@@ -216,6 +218,7 @@ margin-left: 50px;
    font-family: 'Averia Serif Libre', serif;
     color: #4A501F;
   font-weight: lighter;
+  text-decoration: underline;
 }
 
 .left .intro{
@@ -283,4 +286,99 @@ margin-left: 50px;
       width: 90%;
       margin: 0;
     }
+  }
+
+   /*-------------------------------About-------------------------------*/
+  .about-section{
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+  }
+
+  .about-title{
+    text-align: center;
+    width: 100%;
+    font-family: 'Averia Serif Libre', serif;
+    color: #4A501F;
+    font-size: 32px;
+  }
+
+  .about-content{
+    display: flex;
+    flex-direction: row;
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+
+  .about-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px;
+    width: 50%;
+  }
+
+  .about-text-container p{
+    font-family: 'Averia Serif Libre', serif;
+    color: var(--darkbrown);
+    font-weight: 800;
+    font-size: 1vw;
+
+  }
+
+  .about-text-container .cbutton-container
+  {
+    align-self: center;
+  }
+
+  .about-logo {
+    padding: 50px;
+    width: 50%;
+    height: 600px;
+    background:url(./assets/images/logos/gge-logo-16.png)
+      no-repeat center / cover;
+    border-radius: 0px;
+   
+  }
+
+  @media only screen and (max-width: 1110px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 0 20px;
+    }
+
+    .about-text-container{
+      padding: 10px;
+      width: 75%;
+    }
+
+    .about-text-container p{
+      font-size: 1.5vw;
+    }
+    .about-logo {
+      width: 300px;
+      height: 400px;
+      padding: 0px;
+    }
+  
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .about-text-container p{
+      font-size: 2vw;
+    }
+  }
+
+   @media only screen and (max-width: 480px) {
+
+    .about-text-container p{
+      font-size: 3vw;
+    }
+  
   }
