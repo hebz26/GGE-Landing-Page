@@ -22,6 +22,16 @@
 
 /*-------------------------------Navbar-------------------------------*/
 
+.anchor-container {
+  position: relative;
+}
+
+.anchor {
+  position: absolute;
+  top: -85px; /* given the fixed header is 50px tall, and you want 15px padding */
+  left: 0px;
+}
+
 nav{
     background-color: white;
     z-index: 8;
@@ -48,6 +58,7 @@ margin-left: 50px;
 .navbar-nav a.nav-link {
     color: #675141;
   }
+
   
   .navbar-nav a.nav-link.active {
     color: #79804B;
@@ -165,7 +176,7 @@ margin-left: 50px;
     align-items: center;
     justify-content: center;
     background-color: white;
-    gap: 50px;
+    gap: 10px;
   }
 
   .servicesTitle {
@@ -375,14 +386,14 @@ margin-left: 50px;
   @media only screen and (max-width: 768px) {
 
     .about-text-container p{
-      font-size: 2vw;
+      font-size: 3vw;
     }
   }
 
    @media only screen and (max-width: 480px) {
 
     .about-text-container p{
-      font-size: 3vw;
+      font-size: 4vw;
     }
   
   }
@@ -667,7 +678,7 @@ font-weight: 300;
     margin-bottom: 40px;
   }
 }
-
+ /*-------------------------------Footer-------------------------------*/
 
 
 

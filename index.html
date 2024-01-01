@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-------------------------------- Navbar ------------------------------>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav id="navvy" class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <!-- Logo on the left -->
         <a href="" class="logo-container">
@@ -50,25 +50,31 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#Home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#Service">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#About">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#Gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <!-------------------------------- Navbar Done ------------------------------>
     <!-------------------------------- Hero  ------------------------------>
 
-    <div class="hero-container">
+    <div id="Home" class="hero-container">
       <div class="hero-img-container">
         <img
           src="./assets/images/ben-rosett-nYugmV-SY6s-unsplash.jpg"
@@ -94,8 +100,11 @@
     <!-------------------------------- Hero Done ------------------------------>
     <!-------------------------------- Services ------------------------------>
 
-    <section class="service-section">
-      <div class="servicesTitle">Our Services</div>
+    <section id="Services" class="service-section">
+      <div class="anchor-container">
+        <div class="servicesTitle">Our Services</div>
+        <a class="anchor" id="Service"></a>
+      </div>
       <div class="service-container">
         <div class="left">
           <div class="content">
@@ -191,7 +200,10 @@
     <!-------------------------------- Services Done ------------------------------>
     <!-------------------------------- About ------------------------------>
     <div class="about-section">
-      <div class="about-title">About Green Gather Events</div>
+      <div class="anchor-container">
+        <div class="about-title">About Green Gather Events</div>
+        <a class="anchor" id="About"></a>
+      </div>
       <div class="about-content">
         <div class="about-logo"></div>
         <div class="about-text-container">
@@ -225,7 +237,11 @@
     <!-------------------------------- Gallery  ------------------------------>
 
     <div class="gallery-section">
-      <h1 class="gallery-title">Gallery</h1>
+      <div class="anchor-container">
+        <h1 class="gallery-title">Gallery</h1>
+        <a class="anchor" id="Gallery"></a>
+      </div>
+
       <div class="photo-gallery">
         <div class="tall">
           <img src="./assets/images/toa-heftiba-unsplash1.jpg" alt="" />
@@ -251,74 +267,67 @@
     </div>
     <!-------------------------------- Gallery Done  ------------------------------>
     <!-------------------------------- Contact   ------------------------------>
-<section class="contact-section">
-  <div class="contact-content">
-<h2 class="contact-title">
-  Contact Us
-</h2>
-<p>Thank you for considering Green Gather Events for your upcoming event! Whether you're organizing a wedding, corporate gathering, or any special occasion, we're here to make it extraordinary. Feel free to reach out to us using the contact information below:</p>
-  </div>
-  <div class="contact-info-container">
-    <div class="contact-info">
-      <div class="contact-box">
-        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
-        <div class="contact-text">
-          <h3>Office Location</h3>
-          <p>123 Pine Street, Seattle, WA 98101</p>
+    <section class="contact-section">
+      <div class="anchor-container">
+        <div class="contact-content">
+          <h2 class="contact-title">Contact Us</h2>
+          <p>
+            Thank you for considering Green Gather Events for your upcoming
+            event! Whether you're organizing a wedding, corporate gathering, or
+            any special occasion, we're here to make it extraordinary. Feel free
+            to reach out to us using the contact information below:
+          </p>
+        </div>
+        <a class="anchor" id="Contact"></a>
+      </div>
+      <div class="contact-info-container">
+        <div class="contact-info">
+          <div class="contact-box">
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-text">
+              <h3>Office Location</h3>
+              <p>123 Pine Street, Seattle, WA 98101</p>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-text">
+              <h3>Phone Number</h3>
+              <p>(206) 555-7890</p>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-text">
+              <h3>Email Address</h3>
+              <p>info@greengatheevents.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <input type="text" name="" required="required" />
+              <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="" required="required" />
+              <span>Email Address</span>
+            </div>
+            <div class="inputBox">
+              <textarea required="required"></textarea>
+              <span> Your Message...</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="" value="Send Message" />
+            </div>
+          </form>
         </div>
       </div>
-      <div class="contact-box">
-        <div class="icon"><i class="fa-solid fa-phone"></i></div>
-        <div class="contact-text">
-          <h3> Phone Number</h3>
-          <p>(206) 555-7890</p>
-        </div>
-      </div>
-      <div class="contact-box">
-        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-        <div class="contact-text">
-          <h3> Email Address</h3>
-          <p>info@greengatheevents.com</p>
-        </div>
-      </div>
-    </div>
-    <div class="contact-form">
-      <form>
-        <h2>Send Message</h2>
-        <div class="inputBox">
-          <input type="text" name="" required="required">
-          <span>Full Name</span>
-        </div>
-        <div class="inputBox">
-          <input type="text" name="" required="required">
-          <span>Email Address</span>
-        </div>
-        <div class="inputBox">
-          <textarea required="required"></textarea>
-          <span> Your Message...</span>
-        </div>
-        <div class="inputBox">
-         <input type="submit" name="" value="Send Message">
-        </div>
-      </form>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-</div>
-
-
-
-
-
-
+    </section>
 
     <!-------------------------------- Contact Done  ------------------------------>
-
 
     <!--Javascript Files-->
     <script
