@@ -24,7 +24,9 @@
 
 nav{
     background-color: white;
+    z-index: 8;
 }
+
 
 .logo-container{
     display: flex;
