@@ -65,12 +65,12 @@ margin-left: 50px;
 
   .hero-container {
     position: relative; 
-    max-width: 100%;
+    max-width: 100%; 
   }
   
   .hero-image {
     width: 100%;
-    height: 700px;
+    height: 1000px;
     object-fit: cover; 
     object-position: bottom; 
     display: block;
@@ -84,7 +84,7 @@ margin-left: 50px;
     background-color: white;
     padding: 20px; 
     width: 500px;
-    height: 55%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     /*justify-content: space-between; */
@@ -108,7 +108,8 @@ margin-left: 50px;
   .cbutton-container{
     max-width: 200px;
     align-self: flex-end;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-right: 50px;
   }
 
   .contact-button {
@@ -123,7 +124,7 @@ margin-left: 50px;
 @media screen and (max-width: 768px) {
     .hero-box {
         width: 400px;
-        height: 60%;
+        height: 42%;
     }
 
     .hero-title {
@@ -139,7 +140,7 @@ margin-left: 50px;
   @media screen and (max-width: 480px) {
     .hero-box {
         width: 250px;
-        height: 63%;
+        height: 45%;
     }
 
     .hero-title {
