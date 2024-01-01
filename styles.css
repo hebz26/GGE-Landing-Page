@@ -60,9 +60,7 @@ margin-left: 50px;
   }
 
   
-  .navbar-nav a.nav-link.active {
-    color: #79804B;
-  }
+  
 
   .navbar-nav a.nav-link:hover {
     color:#B4B368;
@@ -511,7 +509,7 @@ align-items: center;
 .contact-section{
   position: relative;
   min-height: 100vh;
-  margin-top: 50px;
+ /* margin-top: 50px; */
   padding: 50px 100px;
   display: flex;
   justify-content: center;
