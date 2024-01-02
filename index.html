@@ -307,14 +307,14 @@
           </div>
         </div>
         <div class="contact-form">
-          <form>
+          <form onsubmit="sendEmail(); reset(); return false;">
             <h2>Send Message</h2>
             <div class="inputBox">
               <input type="text" name="" required="required" />
               <span>Full Name</span>
             </div>
             <div class="inputBox">
-              <input type="text" name="" required="required" />
+              <input type="text" name="" id="email" required="required" />
               <span>Email Address</span>
             </div>
             <div class="inputBox">
@@ -363,10 +363,32 @@
         <div class="socials-container">
           <div class="follow-us">Follow Us</div>
           <div class="social-media-icons">
-            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
-            <div class="icon"><i class="fa-brands fa-square-facebook"></i></div>
             <div class="icon">
-              <i class="fa-brands fa-square-x-twitter"></i>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-square-facebook"></i
+              ></a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-square-x-twitter"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -385,6 +407,8 @@
       src="https://kit.fontawesome.com/8bd66c93ba.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

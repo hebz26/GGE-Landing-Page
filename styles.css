@@ -725,6 +725,12 @@ background-color: var(--cream);
   cursor: pointer;
 }
 
+.social-media-icons .icon a{
+ 
+  color: var(--darkbrown);
+ 
+}
+
 .follow-us{
   text-align: center;
 }
