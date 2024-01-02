@@ -38,7 +38,7 @@ nav{
 }
 
 
-.logo-container{
+.navbar .logo-container{
     display: flex;
     align-items: center;
 justify-content: center;
@@ -338,7 +338,7 @@ margin-left: 50px;
     font-family: 'Averia Serif Libre', serif;
     color: var(--darkbrown);
     font-weight: 800;
-    font-size: 1vw;
+    font-size: 1.2vw;
 
   }
 
@@ -350,7 +350,7 @@ margin-left: 50px;
   .about-logo {
     padding: 50px;
     width: 50%;
-    height: 600px;
+    height: 650px;
     background:url(./assets/images/logos/gge-logo-16.png)
       no-repeat center / cover;
     border-radius: 0px;
@@ -677,6 +677,92 @@ font-weight: 300;
   }
 }
  /*-------------------------------Footer-------------------------------*/
+
+ .footer-section{
+  position: relative;
+  min-height: 5vh;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-color: var(--cream);
+}
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 50px;
+}
+
+.footer-container .logo-container{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+
+.footer-logo{
+  height: 150px;
+  width: auto;
+}
+
+.social-media-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media-icons .icon {
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: var(--darkbrown);
+  cursor: pointer;
+}
+
+.follow-us{
+  text-align: center;
+}
+
+.links-container .navbar-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+justify-content: center;
+margin-inline-end: 0px;
+}
+
+.links-container {
+  text-align: center;
+
+}
+
+.follow-us{
+  font-family: 'Averia Serif Libre', serif;
+    color: var(--darkbrown);
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 990px) {
+  .footer-section .logo-container{
+    display: none;
+  }
+  .links-container{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
 
 
 
